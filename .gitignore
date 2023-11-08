@@ -1,0 +1,25 @@
+# Ignorar archivos y directorios generados automáticamente
+node_modules/
+dist/
+.cache/
+
+# Ignorar archivos y directorios específicos
+config.js
+.env
+
+# Ignorar archivos de configuración de IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.suo
+
+# Ignorar archivos de registro y respaldo
+*.log
+*.log.*
+*.swp
+*.bak
+
+# Ignorar archivos de dependencias generados automáticamente por npm o Yarn
+package-lock.json
+yarn.lock
