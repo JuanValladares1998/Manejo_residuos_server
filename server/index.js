@@ -12,8 +12,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const { findOptimalPath, cityMap } = require("./grafos");
 
 //Rutas API
-const itemsRutas = require("./api/usuarios");
-app.use("/api", itemsRutas);
+const usuariosRutas = require("./api/usuarios");
+const reportesRutas = require("./api/reportes");
+app.use("/api", usuariosRutas);
+app.use("/api", reportesRutas);
 
 app.listen(port, () => {
   console.log("Servidor listo");
